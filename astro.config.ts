@@ -5,13 +5,19 @@ import sitemap from '@astrojs/sitemap';
 import UnoCSS from 'unocss/astro';
 
 
+import vercel from '@astrojs/vercel';
+
+
 export default defineConfig({
-	site: 'https://example.com',
-	integrations: [
-		mdx(), 
-		sitemap(),
-		UnoCSS({
-			injectReset: true
-		}),
+  site: 'https://example.com',
+
+  integrations: [
+      mdx(), 
+      sitemap(),
+      UnoCSS({
+          injectReset: true
+      }),
 	],
+
+  adapter: vercel(),
 });

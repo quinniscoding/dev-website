@@ -4,8 +4,16 @@
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
 
+ *, :before, :after {
+	box-sizing: border-box;
+ }
+
+body {
+	font-size: 16px;
+}
 
 
+/* 
 :root {
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -136,7 +144,8 @@ hr {
 	main {
 		padding: 1em;
 	}
-}
+} */
+ 
 
 .sr-only {
 	border: 0;
@@ -154,27 +163,4 @@ hr {
 	clip-path: inset(50%);
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
-
-
-	html.dark {
-  background-color: #0d0950;
-  color: #fff;
 }
-
-.dark .menu {
-  background-color: #fff;
-  color: #000;
-}
-
-.dark .nav-links a:hover,
-.dark .nav-links a:focus {
-  color: #0d0950;
-}
-
-.dark .nav-links a {
-  color: #fff;
-}
-
-.dark a {
-  color: #ff9776;
-}  

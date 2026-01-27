@@ -1,32 +1,39 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<h1 class="sr-only">Quinn Huang</h1>
-				<p>Quinn Huang is a full stack software engineer and psychology + neuroscience enthusiast.
-				</p>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      h1 {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <Header />
+    <main>
+      <section>
+        <h1 class="sr-only">Quinn Huang</h1>
+        <p>
+          Quinn Huang is a full stack software engineer and psychology +
+          neuroscience enthusiast.
+        </p>
 
-				<p>Currently living in Philadelphia</p>
-			</section>
-			<section>
-				<!-- <p>Working at ....</p> -->
-				<!-- <p>Currently working as a freelancer, see my portfolio and resume</p> -->
-				<!-- <p>Creator of ABC, DEF, GHI</p> -->
-				<!-- <p>Latest project: ABC productivity system + to do list for people with adhd</p> -->
-			</section>
-			<!-- <section>
+        <p>Currently living in Philadelphia</p>
+      </section>
+      <section>
+        <!-- <p>Working at ....</p> -->
+        <!-- <p>Currently working as a freelancer, see my portfolio and resume</p> -->
+        <!-- <p>Creator of ABC, DEF, GHI</p> -->
+        <!-- <p>Latest project: ABC productivity system + to do list for people with adhd</p> -->
+      </section>
+      <!-- <section>
 				<h2>Experience</h2>
 				<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit necessitatibus a veniam, laudantium distinctio suscipit deleniti? Rerum eos officia aperiam amet! Consectetur, voluptatum fugit illo ab eos sequi minima hic.</p>
 			</section>
@@ -47,46 +54,20 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 				<a href="/projects">See all my projects</a>
 			</section> -->
 
-			<!-- <section>
+      <!-- <section>
 				<h2>Latest Post</h2>
 				<ul>
 					<li>Example post 1</li>
 				</ul>
 				<a href="/blog">See More</a>
 			</section> -->
-			<!-- <section>
+      <!-- <section>
 				<p>Outside of programming I have many hobbies - psychology, design, neuroscience, language, meditaiton, movies, music</p>
 				<p>
 					If you're interesting in my thoughts of projects in any of these things, I post about them on <a href="www.quinnstumbles.com">www.quinnstumbles.com</a>. 
 				</p>
 			</section> -->
-			
-		</main>
-		<Footer />
-	</body>
+    </main>
+    <Footer />
+  </body>
 </html>
-
-<style>
-	main {
-		margin: 4rem;
-		padding: 0 2rem;
-	}
-
-	section {
-		margin: 2rem;
-	}
-
-	@media (max-width: 720px) {
-		main {
-			margin: 1rem;;
-		}
-
-		section {
-			margin: 1rem;
-		}
-	}
-
-
-
-
-</style>

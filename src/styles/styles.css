@@ -1,20 +1,17 @@
 
+
+main {
+  background-color: aqua;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+
+@media (max-width: 720px) {
   main {
-    margin: 4rem;
-    padding: 0 2rem;
-    background-color: aqua;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    
   }
-
-  section {
-    margin: 2rem;
-  }
-
-  @media (max-width: 720px) {
-    main {
-      margin: 1rem;
-    }
-
-    section {
-      margin: 1rem;
-    }
-  }
+}

@@ -7,7 +7,7 @@ import FormattedDate from "../../components/FormattedDate.astro";
 import Header from "../../components/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 
-const posts = (await getCollection("blog")).sort(
+const posts = (await getCollection("writing")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -27,7 +27,7 @@ const posts = (await getCollection("blog")).sort(
         {
           posts.map((post) => (
             <article class="card">
-              <a href={`/blog/${post.id}/`}>
+              <a href={`/writing/${post.id}/`}>
                 {post.data.heroImage && (
 					<h4 class="title">{post.data.title}</h4>
 					<p class="date">
